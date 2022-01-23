@@ -1,0 +1,261 @@
+.ui-main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.ui-content {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.ui-left {
+    width: 50%;
+    height: 100vw;
+}
+
+.ui-heading {
+    font-size: 6vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ui-heading-u {
+    font-size: 6vw;
+    margin: 0px;
+    padding: 0px;
+    /* transform: rotateZ(180deg); */
+    transition: all ease 800ms;
+}
+
+.eye {
+    background: white;
+    width: 1.1vw;
+    border: 1px solid #282828;
+    height: 16%;
+    border-radius: 50%;
+    /* transform-origin: 50%; */
+    animation: blink 3s infinite;
+    position: relative;
+    left: 2.1vw;
+    top: 10%;
+    z-index: 999;
+    opacity: 0;
+    /* mix-blend-mode: difference; */
+    transition: all ease 800ms;
+}
+
+.ui-description {
+    width: 50vw;
+    height: 80vh;
+    font-weight: bolder;
+    font-size: 4vw;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    word-spacing: 1vw;
+    line-height: 10vh;
+    margin-top: 5vh;
+}
+
+.ui-right {
+    width: 50%;
+    height: 100vh;
+}
+
+.ui-svg-main {
+    width: 50vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: perspective(10000px) rotateX(0) rotateY(0deg) rotateZ(0) translateX(0) translateY(0px) translateZ(0px);
+
+}
+
+/* .hover-heading {
+    transition: all ease 1600ms;
+    position: absolute;
+    color: #282828;
+    font-family: sans-serif;
+    font: message-box;
+    font-weight: bolder;
+    opacity: 0.3;
+    left: 75vw;
+    top: 80vh;
+}
+
+.layer {
+    transform: perspective(600px) rotateX(0) rotateY(0deg) rotateZ(0) translateX(1.5rem) translateY(0px) translateZ(0px);
+    transition: all ease 1600ms;
+}
+
+.ui-right:hover .hover-heading {
+    opacity: 0;
+}
+
+.rect {
+    background: rgb(0, 213, 232);
+    background: linear-gradient(144deg, rgba(0, 213, 232, 1) 0%, rgba(0, 154, 242, 1) 100%);
+    width: 90%;
+    height: 85%;
+    margin-top: 0.8rem;
+}
+
+.ui-main:hover .topmost {
+    transform: perspective(600px) rotateX(0) rotateY(2deg) rotateZ(0) translateX(0) translateY(0px) translateZ(150px);
+    transform-style: preserve-3d;
+}
+
+.ui-main:hover .top {
+    transform: perspective(600px) rotateX(0) rotateY(2deg) rotateZ(0) translateX(0) translateY(0px) translateZ(100px);
+}
+
+.ui-main:hover .center {
+    transform: perspective(600px) rotateX(0) rotateY(2deg) rotateZ(0) translateX(0) translateY(0px) translateZ(50px);
+}
+
+.ui-main:hover .bottom {
+    transition: all ease 1600ms;
+    transform: perspective(600px) rotateX(0) rotateY(2deg) rotateZ(0) translateX(0) translateY(0px) translateZ(0px);
+}
+
+.ui-main:hover .most-bottom {
+    transform: perspective(600px) rotateX(0) rotateY(2deg) rotateZ(0) translateX(0) translateY(0px) translateZ(-50px);
+    transition: all ease 1600ms;
+}
+.most-bottom {
+    transition: all ease 1600ms;
+}
+
+.rect {
+    transition: all ease 1600ms;
+}
+.ui-main:hover .ui-svg-main .ui-svg .top,
+.center,
+.bottom rect {
+    opacity: 0.5;
+}
+.ui-main .ui-svg-main .ui-svg .layer rect {
+    transition: all ease 1600ms;
+} */
+
+@keyframes blink {
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+    0%,
+    100% {
+        transform: scale(1, 0);
+    }
+}
+
+.layer{
+    position: absolute;
+    width: 9rem;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    transform: perspective(600px) rotateX(0) rotateY(0deg) rotateZ(0) translateX(1.5rem) translateY(0) translateZ(0px);
+    transition: all ease 1800ms;
+    
+}
+
+/* .ui-content:hover .layer1 {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0px) translateY(0px) translateZ(210px);
+}
+
+.ui-content:hover .layer2 {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(140px);
+
+}
+
+.ui-content:hover .layer3 {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(70px);
+}
+
+.ui-content:hover .layer4 {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(0px);
+
+}
+
+.ui-content:hover .layer5 {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(-70px);
+} */
+
+.layer1active {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0px) translateY(0px) translateZ(210px);
+    transition:all ease 1800ms ;
+}
+
+.layer2active {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(140px);
+    opacity: 0.6;
+
+}
+
+.layer3active {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(70px);
+    opacity: 0.6;
+
+}
+
+.layer4active {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(0px);
+    opacity: 0.6;
+
+
+}
+
+.layer5active {
+    transform: perspective(600px) rotateX(0) rotateY(20deg) rotateZ(0) translateX(0) translateY(0px) translateZ(-70px);
+}
+
+
+/* .ui-content:hover .layer2,
+.layer3,
+.layer4 {
+    opacity: 0.6;
+} */
+
+.hover-heading {
+    transition: all ease 1600ms;
+    position: absolute;
+    color: #282828;
+    font-family: sans-serif;
+    font: message-box;
+    font-weight: bolder;
+    left: 50%;
+    top: 80%;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px){
+    .ui-content{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    .ui-left{
+        height: 50vh;
+        width: 100%;
+    }
+    .ui-right{
+        height: 50vh;
+        width: 100%;
+    }
+    .ui-svg-main{
+        width: 100vw;
+        height: 100vh;
+    }
+    .ui-description {
+        width: 90vw;
+        height: 50vh;
+        font-size: 6vw;
+        word-spacing: 1vw;
+        line-height: 5vh;
+    }
+    .layer{
+        width: 30vw;
+        top: 5%;
+        left: 30vw;
+    }
+}

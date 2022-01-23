@@ -1,0 +1,19 @@
+.cb-main{
+    width: 40%;
+    height: 90%;
+    background-color: yellow;
+    overflow: scroll;
+
+}
+
+.image-container {
+    width: 100%;
+    height: 60%;
+    background-color: brown;
+    /* broder */
+}
+
+.image-1{
+    clip-path: path('M 4 8 C 6 8 7 10 8 8 C 9 6 11 8 12 8 Q 14 9 15 8 C 16 7 16 6 17 8 Q 18 10 19 8 L 19 -18 L 4 -18 L 4 8');
+    
+}

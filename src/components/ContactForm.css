@@ -1,0 +1,44 @@
+#myForm div input {
+    /* transition: all ease 1500ms; */
+    width: 80vw;
+    border: none;
+    height: 15vh;
+    background-color: #f2f2f2;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(114, 114, 114);
+}
+
+input:focus {
+    outline: none;
+    /* color: red; */
+    /* border-bottom: 2px solid #282828; */
+}
+
+input::placeholder {
+    color: rgb(114, 114, 114);
+}
+
+.ul li {
+    color: #282828;
+    margin-left: 2rem;
+    border: 1px solid #282828;
+    padding: 0.8rem;
+    border-radius: 100px;
+}
+
+input[type="submit"] {
+    color: purple;
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.send:hover {
+    opacity: 0.95;
+}
+.send input{
+    background: rgb(65,23,107);
+    background: linear-gradient(180deg, rgba(65,23,107,1) 0%, rgba(28,13,43,1) 100%); 
+}
