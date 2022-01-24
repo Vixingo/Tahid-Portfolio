@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap, TweenMax, TweenLite, TimelineLite, Power3, Circ } from "gsap";
 import "./Footer.css";
-import { useWindowSize } from "../component/useWindowSize";
+import { useWindowSize } from "../components/useWindowSize";
 // import ObaidNadeemResume from '../Landing-main/Obaid Nadeem Resume.pdf'
 
 export const Footer = () => {

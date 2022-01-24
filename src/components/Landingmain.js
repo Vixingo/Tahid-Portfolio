@@ -3,8 +3,8 @@ import "./Landingmain.css";
 import "./cube.css";
 import { gsap, TweenMax, TweenLite, TimelineLite, Power3, Circ } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useWindowSize } from "../component/useWindowSize";
-import { ContactForm } from "../component/ContactForm";
+import { useWindowSize } from "../components/useWindowSize";
+import { ContactForm } from "../components/ContactForm";
 // import { Blending } from "three";
 // import { TextAnimation } from '../TextAnimation/TextAnimation'
 import { StaggerTextChange } from "stagger-text-reveal-animation";

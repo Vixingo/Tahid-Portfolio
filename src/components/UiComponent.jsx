@@ -3,7 +3,7 @@ import { gsap, TweenMax, TimelineLite, Power3, Circ } from "gsap";
 // import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
-import { useWindowSize } from "../component/useWindowSize";
+import { useWindowSize } from "../components/useWindowSize";
 import "./UiComponent.css";
 import layer1 from "./layer1-03.svg";
 import layer2 from "./layer2-03.svg";

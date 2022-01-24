@@ -4,7 +4,7 @@ import "./frontend.css";
 import anime from "animejs/lib/anime.es.js";
 import { gsap, TweenMax, TimelineLite, Power3, Circ } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useWindowSize } from "../component/useWindowSize";
+import { useWindowSize } from "../components/useWindowSize";
 import { TextPlugin } from "gsap/TextPlugin";
 // import DATAPNG from './data.png'
 

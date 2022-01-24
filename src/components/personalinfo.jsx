@@ -9,7 +9,7 @@ import {
     Circ,
 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useWindowSize } from "../component/useWindowSize";
+import { useWindowSize } from "../components/useWindowSize";
 import "./personalinfo.css";
 import { timeline } from "animejs";
 

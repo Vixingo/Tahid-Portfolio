@@ -3,7 +3,7 @@ import "./Landing.css";
 import { gsap, TweenMax, TimelineLite, Power3, Circ } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useWindowSize } from "../component/useWindowSize";
+import { useWindowSize } from "../components/useWindowSize";
 import { TextPlugin } from "gsap/TextPlugin";
 
 const Path = () => {

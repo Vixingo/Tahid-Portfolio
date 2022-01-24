@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, TweenMax, TweenLite, TimelineLite, Power3, Circ } from "gsap";
 import { Home } from "./Home/Home";
 // import { Navbar } from "./component/nav/Navbar";
-import { useWindowSize } from "./component/useWindowSize";
+import { useWindowSize } from "./components/useWindowSize";
 // import { Test } from "./Test/Test.jsx";
 // import { TextAnimation } from "./component/TextAnimation/TextAnimation";
 import LogRocket from "logrocket";
