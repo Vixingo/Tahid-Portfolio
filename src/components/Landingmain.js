@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Landingmain.css";
 import "./cube.css";
+import "../../node_modules/animate.css/animate.css";
 import { gsap, TweenMax, TweenLite, TimelineLite, Power3, Circ } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useWindowSize } from "../components/useWindowSize";
@@ -10,6 +11,12 @@ import { ContactForm } from "../components/ContactForm";
 import { StaggerTextChange } from "stagger-text-reveal-animation";
 
 export const Landingmain = () => {
+    const [firsto, setFirsto] = useState("Harun Tahid");
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setFirsto("Just Scroll !");
+        }, 3000);
+    });
     const [height, width] = useWindowSize();
     gsap.registerPlugin(ScrollTrigger);
 
@@ -380,19 +387,16 @@ export const Landingmain = () => {
             <div className="loading1"></div>
             <div className="loading2"></div>
             <div className="loading3">
-                {textAnimation ? (
-                    <StaggerTextChange
-                        className="TextAnimation"
-                        text={`${change ? "Just Scroll !" : "Obaid Nadeem"}`}
-                        color={"white"}
-                        stagger={30}
-                        duration={0.6}
-                        fontSize={3.2}
-                        unit={"rem"}
-                    />
-                ) : (
-                    ""
-                )}
+                <h1
+                    className="animate__animated animate__fadeInLeft"
+                    style={{
+                        color: "#fff",
+                        fontSize: "50px",
+                    }}
+                >
+                    {firsto}
+                </h1>
+
                 <div className="cover"></div>
                 <div className="cubes">
                     <div className="cube">
